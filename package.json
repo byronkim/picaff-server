@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "nodemon -r tsconfig-paths/register server/index.ts",
     "start": "nodemon --watch server --delay 1 --exec 'ts-node -r tsconfig-paths/register' server/index.ts",
-    "migration": "npx ts-node ./node_modules/typeorm/cli.js migration:run"
+    "migration": "npx ts-node ./node_modules/typeorm/cli.js migration:run",
+    "build": "tsc -p ."
   },
   "repository": {
     "type": "git",
@@ -29,9 +30,9 @@
     "googleapis": "^73.0.0",
     "jsonwebtoken": "^8.5.1",
     "mysql": "^2.18.1",
-    "nodemailer": "^6.6.0",
+    "nodemailer": "^6.7.0",
     "puppeteer": "^10.0.0",
-    "typeorm": "^0.2.32"
+    "typeorm": "^0.2.38"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.2",
@@ -43,7 +44,7 @@
     "@typescript-eslint/eslint-plugin": "^4.23.0",
     "@typescript-eslint/parser": "^4.23.0",
     "eslint": "^7.26.0",
-    "nodemon": "^2.0.7",
+    "nodemon": "^2.0.14",
     "prettier": "^2.3.0",
     "ts-node": "^9.1.1",
     "tsconfig-paths": "^3.9.0",

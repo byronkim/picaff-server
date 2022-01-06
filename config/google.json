@@ -1,16 +1,1 @@
-{
-  "web": {
-    "client_id": "CLIENT_ID"
-    "project_id": "picaff",
-    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_secret": "CLIENT_SECRET",
-    "redirect_uris": [
-      "http://localhost:4000/google",
-      "http://localhost:4000/auth/google/callback",
-      "http://localhost:4000/login"
-    ],
-    "javascript_origins": ["http://localhost:4000", "http://localhost:3000"]
-  }
-}
+{"web":{"client_id":"926403063200-7e39s176ol53ggumuv5lt9t3cb3odhgs.apps.googleusercontent.com","project_id":"picaff-331700","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"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","redirect_uris":["https://picaff.site/auth/google/callback","https://picaff.site","http://picaff.site","https://picaff.site/result","https://picaff.site/user/signup","https://picaff.site/user/google","https://picaff.site/google","https://picaff.site/signin"],"javascript_origins":["http://localhost:3000","https://picaff.site","http://picaff.site"]}}

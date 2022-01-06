@@ -42,7 +42,7 @@ const userInfo = async (req: Request, res: Response) => {
         likedCoffeeList: likedCoffeeList,
         likedProductList: likedProductList,
       })
-    } catch (err) {
+    } catch (err: any) {
       if (err.name) {
         /** 토큰이 만료되거나, 잘못된 엑세스 토큰으로 로그아웃 시도할때 **/
         return res.status(401).send({ message: '로그인상태와 엑세스토큰 확인이 필요합니다.' })

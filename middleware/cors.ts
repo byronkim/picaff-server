@@ -1,10 +1,5 @@
 const corsOption = {
-  origin: [
-    'http://localhost:3000',
-    'https://localhost:3000',
-    'https://pikaff.ga',
-    'https://www.pikaff.ga',
-  ],
+origin: [ 'https://picaff.site', 'https://client.picaff.site', ],
   methods: ['GET', 'POST', 'DELETE', 'PATCH', 'PUT'],
   optionsSuccessStatus: 200,
   credentials: true,

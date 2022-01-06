@@ -13,7 +13,9 @@ const makeSerial = (): string => {
 }
 
 const mail = async (req: Request, res: Response) => {
-  const { email } = req.body
+const { email } = req.body
+console.log('이메일 확인중')
+console.log(email)
   if (req.query.type !== 'signoff') {
     const isExistEmail = await interfaces.isCheckedUser(email)
     if (isExistEmail) return res.status(403).send({ message: '이미 사용중인 메일주소입니다.' })
@@ -29,13 +31,13 @@ const mail = async (req: Request, res: Response) => {
     secure: false,
     requireTLS: true,
     auth: {
-      user: 'picaffAuth@gmail.com',
+      user: 'picaff.operator@gmail.com',
       pass: process.env.MAIL_PASSWORD,
     },
   })
 
   await transporter.sendMail({
-    from: '"Picaff 당신의 커피 취향을 알아보세요" <PicaffAuth@gamil.com>',
+    from: '"Picaff 당신의 커피 취향을 알아보세요" <picaff.operator@gmail.com>',
     to: `${email}`,
     subject: '[Picaff] email 인증요청',
     html: `
