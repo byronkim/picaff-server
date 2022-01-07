@@ -68,7 +68,7 @@ const mail = async (req: Request, res: Response) => {
     return res.status(201).send({ serialnum })
   } else {
     console.log('Invalid Email')
-    return res.status(403).send({ message: 'Invalid Email' })
+    return res.status(401).send({ message: 'Invalid Email' })
   }
 }
 export default mail
