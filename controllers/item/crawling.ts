@@ -4,6 +4,7 @@ import Crawling from '@middleware/crawling'
 const crawling = async (req: Request, res: Response) => {
   try {
     console.log(req.body)
+    console.log(req)
     const data = await Crawling.getData(req.body.itemName)
     return res.status(200).send(data)
   } catch (err) {
